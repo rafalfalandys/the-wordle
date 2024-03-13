@@ -22,7 +22,13 @@ const Main = () => {
 
   return (
     <div>
-      {errorMsg ? <h3>{errorMsg}</h3> : isWin ? <h3>You win!</h3> : rows}
+      {errorMsg ? (
+        <h3>{errorMsg}</h3>
+      ) : isWin && typedWord.length === 0 ? (
+        <h3>You win!</h3>
+      ) : (
+        rows
+      )}
     </div>
   );
 };
