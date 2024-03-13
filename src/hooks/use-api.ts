@@ -6,9 +6,6 @@ const useApi = () => {
 
   useEffect(() => {
     const fetchWord = async () => {
-      setWinWord("worry");
-      return;
-
       try {
         setErrorMsg("");
         const res = await fetch(
