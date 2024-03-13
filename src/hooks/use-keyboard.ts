@@ -52,11 +52,11 @@ const useKeyboard = (winWord: string) => {
   }, [keyDownHandler, winWord]);
 
   useEffect(() => {
-    setIsWin(
-      (guessedLetters.length === 5 &&
-        guessedLetters.some((isLetterWin) => isLetterWin !== false)) ||
-        isWin
-    );
+    const allTrue = guessedLetters.every((letter) => letter === true);
+
+    if ((allTrue && guessedLetters.length === 5) || isWin) {
+      setIsWin(true);
+    }
   }, [guessedLetters, isWin]);
 
   return { typedWord, activeRow, isWin };
