@@ -1,18 +1,10 @@
-# Create a WORDLE game
+# WORDLE game
 
-Fetch the word to guess from an API
+Simple game, where player guesses 5-letter words, and has 6 guesses
 
-User guesses 5-letter words
-
-User has 6 guesses
-
-If a certain letter is on a correct place, it should appear as green
-If a certain letter is in a word but not in a correct place, it should appear as yellow
-If a certain letter is not in a word then it should appear as gray
-
-Example game: https://www.nytimes.com/games/wordle/index.ht
-
-css classes are already prepared in `index.css` file.
+If a certain letter is on a correct place, it appears as green
+If a certain letter is in a word but not in a correct place, it appears as yellow
+If a certain letter is not in a word then it appears as gray
 
 ## Available Scripts
 
@@ -32,5 +24,3 @@ Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
-
-
